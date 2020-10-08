@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/css/common.css}" />
+</head>
+<body>
+
+<div th:insert="navbar.html"></div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <h4>Settings</h4>
+</div>
+
+<div class="card text-center" style="height: auto;">
+    <br><br>
+
+    <div class="card container bg-light border-dark mb-3" style="max-width: 500px;">
+        <br>
+        <h4 class="card-title text-center">Enter your desired settings</h4>
+        <hr><br>
+
+        <form method="post" action="/updateSettings">
+            <div class="form-group">
+                <label for="noOfStudents">Input the number of students you'd like to generate the solution for:</label>
+                <input class="form-control" style="width: 200px; margin-left: 30%;" placeholder="Number of Students" min="0" type="number" th:value="${numStudents}" id="noOfStudents" name="noOfStudents">
+            </div>
+
+            <div class="form-group">
+                <label for="noOfStudents">Input the number of preferences you'd like your students to choose:</label>
+                <input class="form-control" style="width: 200px; margin-left: 30%;" placeholder="Number of Preferences" min="0" type="number" th:value="${numPreferences}" id="noOfPreferences" name="noOfPreferences">
+            </div>
+
+            <div class="form-group">
+                <label for="mutationChance">Input the chance of mutation as a percentage (0 - 100):</label>
+                <input class="form-control" style="width: 200px; margin-left: 30%;" placeholder="Chance of Mutation" min="0" max="100" type="number" th:value="${chanceMutation}" id="mutationChance" name="mutationChance">
+            </div>
+
+            <div class="form-group">
+                <label for="cullingPercentage">Input the percentage of culling (0 - 100):</label>
+                <input class="form-control" style="width: 200px; margin-left: 30%;" placeholder="Culling %" min="0" max="100" type="number" th:value="${cullPercentage}" id="cullingPercentage" name="cullingPercentage">
+            </div>
+
+            <div class="form-group">
+                <label for="matingPercentage">Input the percentage of mating (0 - 100):</label>
+                <input class="form-control" style="width: 200px; margin-left: 30%;" placeholder="Mating %" min="0" max="100" type="number" th:value="${matePercentage}" id="matingPercentage" name="matingPercentage">
+            </div>
+
+            <div class="form-group">
+                <label for="maximumPopulation">Input the maximum possible population:</label>
+                <input class="form-control" style="width: 200px; margin-left: 30%;" placeholder="Maximum Population" min="0" type="number" th:value="${maxPopulation}" id="maximumPopulation" name="maximumPopulation">
+            </div>
+
+            <br><hr>
+
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">Save</button>
+            </div>
+        </form>
+
+        <br>
+    </div>
+
+    <br><br>
+</div>
+
+<footer class="text-center">
+    <br>
+    <p>&copy; MoRoJack</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

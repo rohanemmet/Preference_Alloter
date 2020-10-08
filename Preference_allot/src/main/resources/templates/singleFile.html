@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/css/common.css}" />
+</head>
+<body>
+
+    <div th:insert="navbar.html"></div>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h4>This page will show you how to use the site</h4>
+    </div>
+
+    <div class="container" id="maindiv" style="border-left: double; border-right: double; border-left-color: #c0c0c8; border-right-color:#c0c0c8; width: 2500px; margin-bottom: -20px;">
+        <br><br><br>
+
+        <div class="row justify-content-center">
+            <h4>We need one file from you: A students file</h4>
+            <p>The file should be in either .csv or .tsv format (We prefer .csv since tabs are notoriously unreliable in modern text editors).</p>
+        </div>
+
+        <br><br><br>
+
+        <div class="row" style="border-top: double; border-bottom: double; border-top-color: #c0c0c8; border-bottom-color: #c0c0c8; padding: 50px 100px; margin-left: -100px; margin-right: -100px;">
+            <div class="col">
+                <div class="row">
+                    <p>Each row in the students file represents a student.<br>The rows should have a maximum of <strong>24 fields</strong> each: Student, Student Number, GPA, Proposer, Preferences (1 through 20) <br>Please see below for an example of what the file should look like in Excel.</p>
+                </div>
+
+                <div class="row justify-content-center" >
+                    <img th:src="@{/images/SingleFile.png}" style="overflow: auto" />
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div>
+            <div class="col text-center">
+                <p>Click here when you're ready to upload your file</p>
+                <a class="btn btn-default" href="/uploadSingleFile">Continue</a>
+            </div>
+        </div>
+
+        <br><br><br>
+    </div>
+
+    <hr>
+
+    <footer class="text-center">
+        <br>
+        <p>&copy; MoRoJack</p>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

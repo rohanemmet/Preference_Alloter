@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/css/common.css}" />
+</head>
+<body>
+
+    <div th:insert="navbar.html"></div>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h4>This page will show you how to use the site</h4>
+    </div>
+
+    <div class="container" id="maindiv" style="border-left: double; border-right: double; border-left-color: #c0c0c8; border-right-color:#c0c0c8; width: 2500px; margin-bottom: -20px;">
+
+        <br><br><br>
+
+        <div class="row justify-content-center">
+            <h4>We need 3 files from you: A staff file, a students file, and a projects file</h4>
+            <p>Each file should be in either .csv or .tsv format (We prefer .csv since tabs are notoriously unreliable in modern text editors).</p>
+        </div>
+
+        <br><br><br>
+
+        <div class="row" style="border-top: double; border-bottom: double; border-top-color: #c0c0c8; border-bottom-color: #c0c0c8; padding: 50px 100px; margin-left: -100px; margin-right: -100px;">
+            <div class="col-12">
+                <div class="row">
+                    <p>Each row in the staff file represents a staff member <br> The rows should have <strong>5 fields</strong> each: Staff ID, Staff name, Research Activity, Research Area, Special Focus. <br> Please see below for an example of what the file should look like in Excel.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <img th:src="@{/images/StaffFile.png}" style="overflow: auto;"/>
+                </div>
+            </div>
+
+
+            <br>
+        </div>
+
+        <br><br><br>
+
+        <div class="row">
+            <div class="col-5">
+                <div class="row">
+                    <p>Each row in the students file represents a student.<br>The rows should have <strong>6 fields</strong> each: Student number, First name, Last name, Proposer, Preferences, GPA. <br>Please see below for an example of what the file should look like in Excel.</p>
+                </div>
+
+                <div class="row justify-content-center" >
+                    <img th:src="@{/images/StudentsFile.png}" style="overflow: auto;"/>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-1" style="width: 50px; border-left: double; border-left-color: #c0c0c8; margin-left: 7%; margin-top: -60px; margin-bottom: -40px;"></div>
+
+            <div class="col-5">
+                <div class="row">
+                    <p>Each row in the projects file represents a project.<br>The rows should have <strong>3 fields</strong> each: Project title, ID of staff member who proposed it, Streams it is suitable for.<br>Please see below for an example of what the file should look like in Excel.</p>
+                </div>
+
+                <div class="row justify-content-center" >
+                    <img th:src="@{/images/ProjectsFile.png}" style="overflow: auto"/>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="row" style="border-top: double; border-top-color: #c0c0c8; padding-left: 100px; padding-right: 100px; margin-left: -100px; margin-right: -100px;">
+            <div class="col text-center">
+                <br><br>
+                <p>Click here when you're ready to upload your files</p>
+                <a class="btn btn-default" href="/uploadTripleFile">Continue</a>
+            </div>
+        </div>
+
+        <br><br><br>
+    </div>
+
+    <hr>
+
+<footer class="text-center">
+    <br>
+    <p>&copy; MoRoJack</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

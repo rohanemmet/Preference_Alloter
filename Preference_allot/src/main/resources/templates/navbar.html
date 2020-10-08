@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand navbar-default" style="margin-bottom: -5px;">
+    <div class="navbar-collapse collapse">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/index">
+                <img th:src="@{/images/MoRoJack.png}" height="50" style="margin-top: -15px;">
+            </a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li class="nav-item"><a class="nav-link" sec:authorize="!isAuthenticated()" href="/login">Lecturers</a></li>
+            <li class="nav-item"><a class="nav-link" sec:authorize="!isAuthenticated()" href="/students">Students</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="/settings">
+                    <span class="glyphicon glyphicon-cog"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

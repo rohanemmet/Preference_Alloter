@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/css/common.css}" />
+</head>
+<body>
+
+    <div th:insert="navbar.html"></div>
+
+    <div class="jumbotron text-center" style="margin-bottom:0;">
+        <h4>Select your options and download your files</h4>
+    </div>
+
+    <div class="container" id="maindiv" style="border-opacity: 1; border-left: double; border-right: double; border-left-color: #c0c0c8; border-right-color:#c0c0c8; width: 2500px; margin-bottom: -20px;">
+        <br><br><br>
+
+        <div class="row">
+            <div class="col-5">
+                <br><br>
+
+                <h4 style="margin-top: -30px;">Use the slider to determine how much GPA will affect the outcome
+                    <span class="help glyphicon glyphicon-question-sign"><span>If you want students with higher GPAs to get projects higher in their preference lists, you should set the value of this slider closer to 1.</span></span>
+                :</h4>
+
+                <form class="text-center" method="POST" action="/solution">
+                    <div class="sliders" style="margin-left: 20%; margin-right: 20%;">
+                        <br>
+                            <input type="range" step="0.01" min="0" max="1" value="0.50" class="slider" id="GPARange" name="GPARange">
+                        <h5 class="text-center" id="value"></h5><br>
+                    </div>
+
+                    <div class="heading text-left">
+                        <h4 style="margin-top: -2px; margin-bottom: 5px;">Select between the options below
+                            <span class="help glyphicon glyphicon-question-sign"><span>Simulated annealing uses a hill climbing technique to improve the solution. Genetic algorithms combine the best aspects of multiple solutions to create the best overall solution.</span></span>
+                            :</h4><br>
+                    </div>
+
+                    <input type="radio" id="simulatedAnnealing" name="choice" value="simulatedAnnealing" checked="checked">
+                    <label for="simulatedAnnealing">Simulated Annealing</label><br>
+                    <input type="radio" id="geneticAlgorithms" name="choice" value="geneticAlgorithms">
+                    <label for="geneticAlgorithms">Genetic Algorithms</label>
+
+                    <br><br>
+
+                    <div class="progress md-progress" style="height: 10px;">
+                        <div id="progress" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="height: 10px;" th:style="'width:'+ ${value}+'%;'" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <button type="submit" onclick="move()" class="btn btn-default" style="margin-top: 5px;">Generate Solution</button>
+                </form>
+            </div>
+
+            <div class="col-1" style="width: 50px; border-left: double; border-left-color: #c0c0c8; margin-left: 7%; margin-top: -60px; margin-bottom: -40px;"></div>
+
+            <div class="col-5" style="display: grid; justify-content: center; align-content: center;"  th:if="${download}">
+                <div class="row justify-content-center">
+                    <h4>Download your files here:</h4>
+                </div>
+
+                <div class="row justify-content-center">
+                    <a class="btn btn-primary" href="/downloadP">Projects</a>
+                    <a class="btn btn-danger" href="/downloadS">Students</a>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+    </div>
+
+    <hr>
+
+    <footer class="text-center">
+        <br>
+        <p>&copy; MoRoJack</p>
+    </footer>
+
+    <script>
+        var gpaSlider = document.getElementById("GPARange");
+        var output = document.getElementById("value");
+        output.innerHTML = gpaSlider.value;
+
+        gpaSlider.oninput = function() {
+            output.innerHTML = this.value;
+        }
+    </script>
+    <script>
+        function move() {
+            var width = 1;
+            var element = document.getElementById("progress");
+
+            var identity = setInterval(jump, 200);
+            function jump() {
+                if (width >= 100) {
+                    clearInterval(identity);
+                } else {
+                    width++;
+                    element.style.width = width + '%';
+                }
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

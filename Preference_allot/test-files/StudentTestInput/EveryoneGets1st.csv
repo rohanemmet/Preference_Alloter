@@ -1,0 +1,11 @@
+Student number,First name,Last name,Proposer,Preferences,GPA
+1,Jack,Price,Supervisor,"1,2,3,6,7,8,9,10",4
+2,Monika,Pociute,Supervisor,"2,3,6,7,8,9,10,1",4
+3,Rohan,Shivakumar,Supervisor,"3,6,7,8,9,10,1,2",4
+4,Morgan,Freeman,Student,4,4
+5,Gordon,Freeman,Student,5,4
+6,Dublin,Bus,Supervisor,"6,7,8,9,10,1,2,3",4
+7,Irish,Rail,Supervisor,"7,8,9,10,1,2,3,6",4
+8,Coke,Pepsi,Supervisor,"8,9,10,1,2,3,6,7",4
+9,Head,Phones,Supervisor,"9,10,1,2,3,6,7,8",4
+10,Micro,Phone,Supervisor,"10,1,2,3,6,7,8,9",4

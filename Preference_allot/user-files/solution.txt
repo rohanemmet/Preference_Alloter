@@ -1,0 +1,63 @@
+Order students were assigned projects in: 
+53,3,38,8,31,5,26,58,35,54,33,39,60,40,14,59,36,30,57,21,22,41,12,6,15,52,43,19,7,49,20,50,11,1,27,28,45,34,4,13,18,9,44,56,29,42,23,48,25,32,47,46,37,51,10,17,24,55,2,16,Solution:
+
+Emma Richards 0.1		(3)		worship society stories app worship worship worship Miskatonic 
+Aldus Ryan 2.0		(3)		Miskatonic Miskatonic stories Miskatonic 
+Sarah Campbell 3.6		(1)		mayhem Cthulhu Cthulhu stories 
+Kelsey Hunt 1.4		(1)		Cthulhu myths myths stories research worship 
+Lana Ellis 0.4		(1)		stories mayhem Miskatonic Dagon Dagon Miskatonic society Miskatonic 
+Lyndon Chapman 0.2		(12)		stories myths mayhem Cthulhu 
+Nicholas Barrett 0.7		(1)		stories Miskatonic society mayhem mayhem app 
+Haris Edwards 4.1		(1)		research stories 
+Tiana Mitchell 1.3		(3)		research worship Miskatonic myths Dagon mayhem Dagon 
+Roland Miller 3.1		(4)		worship Cthulhu 
+Carina Taylor 1.6		(1)		Dagon myths society myths Miskatonic app Cthulhu research 
+Kelvin Russell 2.7		(1)		stories myths research 
+Natalie Foster 1.6		(6)		society society worship Cthulhu worship 
+Frederick Harrison 0.6		(14)		app Miskatonic Miskatonic Miskatonic app Miskatonic research myths 
+Caroline Ross 3.5		(2)		myths Dagon myths research Dagon Miskatonic Dagon 
+Roland Johnston 1.7		(1)		Cthulhu Dagon worship Miskatonic app society stories Cthulhu 
+Dale Montgomery 0.9		(3)		Cthulhu Dagon Dagon 
+Wilson Taylor 2.7		(17)		app Cthulhu 
+Lucia Miller 1.0		(2)		app stories Miskatonic Miskatonic Miskatonic research Miskatonic 
+Violet Cooper 0.0		(1)		app stories 
+Violet Howard 0.8		(1)		myths Cthulhu stories mayhem Miskatonic 
+Sarah Higgins 1.2		(1)		Miskatonic Miskatonic Cthulhu mayhem worship Dagon Dagon 
+Sam Johnson 1.3		(1)		Miskatonic society Cthulhu stories Miskatonic Dagon 
+Dexter Payne 3.2		(2)		Miskatonic society Miskatonic Dagon myths research mayhem app 
+Amy Taylor 1.0		(1)		app stories Cthulhu mayhem stories myths mayhem 
+Michael Johnston 0.9		(1)		Cthulhu Dagon society research 
+Tess Cunningham 1.7		(1)		Miskatonic stories mayhem Miskatonic 
+Dexter Phillips 0.2		(2)		stories Miskatonic myths app 
+Frederick Brooks 4.1		(2)		Miskatonic myths 
+Cherry Miller 0.4		(10)		research stories society mayhem Cthulhu myths Dagon research 
+Adelaide Henderson 3.6		(1)		Dagon Cthulhu Miskatonic Cthulhu myths Dagon 
+Maximilian Holmes 2.4		(10)		worship worship society Miskatonic app app 
+Michael Martin 2.3		(1)		worship myths Cthulhu stories worship Cthulhu 
+Cadie Roberts 3.2		(2)		myths 
+Natalie Dixon 1.1		(13)		research research myths Cthulhu 
+Nicholas Morgan 4.1		(1)		myths stories app myths Miskatonic 
+Ashton Foster 2.3		(6)		Dagon myths society mayhem 
+Caroline Morgan 2.1		(1)		myths stories Miskatonic research 
+Frederick Kelly 2.6		(8)		stories Cthulhu worship Cthulhu 
+Preston Phillips 4.1		(2)		myths Dagon Dagon stories 
+Aida Foster 0.3		(1)		society 
+Haris Carroll 3.3		(1)		Dagon app society stories mayhem Miskatonic 
+Fiona Wilson 3.9		(9)		mayhem Miskatonic myths 
+William Miller 3.7		(3)		stories 
+Dexter Hall 4.0		(12)		app society worship worship Miskatonic 
+Cadie Clark 3.3		(2)		Miskatonic mayhem worship Cthulhu research 
+Camila Ellis 1.8		(4)		stories mayhem mayhem worship myths 
+Sabrina Evans 1.8		(16)		stories society stories worship mayhem 
+Nicholas Kelley 2.7		(12)		mayhem 
+Julia Mitchell 1.4		(1)		mayhem worship research 
+Paige Spencer 3.3		(4)		myths Miskatonic mayhem app research Cthulhu 
+Frederick Roberts 4.1		(14)		Dagon myths Miskatonic app 
+Naomi Morris 0.5		(1)		stories 
+Kelvin Campbell 3.8		(1)		stories society 
+Aiden Payne 3.8		(7)		mayhem Miskatonic Cthulhu myths 
+Tiana Payne 1.8		(1)		worship society mayhem Cthulhu app 
+Chelsea Tucker 0.7		(16)		worship society stories mayhem Dagon Cthulhu 
+Kelvin Ellis 0.2		(1)		Cthulhu stories Cthulhu society app app research myths 
+Alexander Harris 3.4		(1)		mayhem stories myths stories myths 
+Robert Edwards 1.3		(1)		app society worship mayhem 

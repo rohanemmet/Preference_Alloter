@@ -1,0 +1,69 @@
+.jumbotron.text-center {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.card.text-center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: transparent;
+}
+
+.help span{
+    position: absolute;
+    width: 300px;
+    background: black;
+    color: white;
+    padding: 5px 5px 10px 5px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s;
+    word-spacing: -12px;
+}
+
+.help:hover span{
+    visibility: visible;
+    opacity: 1;
+}
+
+#maindiv{
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-top: black;
+    border-bottom: black;
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #b2b1ff;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #b2b1ff;
+    cursor: pointer;
+}
